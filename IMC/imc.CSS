@@ -4,7 +4,7 @@
     --azul-claro: #dbeafe;
     --branco: #ffffff;
     --cinza: #f3f4f6;
-    --vermelho: #dc2626;
+    --vermelho: #e42f22;
 }
 
 #labelDoInputP {
@@ -15,12 +15,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    align-items: center;
     background-color: var(--azul-escuro); /* removido duplicado */
 }
 
 header {
-    background-color: var(--azul);
-    color: var(--branco);
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -31,6 +32,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 80vh;
+    gap:1.5rem;
 }
 
 section {
