@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar</title>
+     <link rel="stylesheet" href="placar.CSS">
+</head>
+<body>
+    <h1> Controle de Placar</h1>
+
+  <div class="placar">
+    <div class="time">
+      <h2>Time A</h2>
+      <div id="pontosA" class="pontos">0</div>
+      <button class="add" onclick="alterarPontuacao('A', 1)">+1</button>
+      <button class="sub" onclick="alterarPontuacao('A', -1)">-1</button>
+    </div>
+
+    <div class="time">
+      <h2>Time B</h2>
+      <div id="pontosB" class="pontos">0</div>
+      <button class="add" onclick="alterarPontuacao('B', 1)">+1</button>
+      <button class="sub" onclick="alterarPontuacao('B', -1)">-1</button>
+    </div>
+  </div>
+
+  <button class="reset" onclick="resetar()">Resetar Placar</button>
+<script src="placar.js"></script>
+</body>
+</html>

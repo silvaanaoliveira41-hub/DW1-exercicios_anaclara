@@ -1,0 +1,138 @@
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #0ea5e9;
+  }
+
+  .placar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+
+  .time {
+    background: #020617;
+    border: 2px solid #38bdf8;
+    border-radius: 15px;
+    padding: 25px;
+    width: 200px;
+    box-shadow: 0 0 15px #38bdf8;
+  }
+
+  .time h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .pontos {
+    font-size: 70px;
+    font-weight: bold;
+    color: #22c55e;
+    text-shadow: 0 0 15px #22c55e, 0 0 30px #16a34a;
+    margin: 20px 0;
+  }
+
+  button {
+    margin: 6px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .add {
+    background: #22c55e;
+    color: black;
+    box-shadow: 0 0 10px #22c55e;
+  }
+
+  .add:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #22c55e;
+  }
+
+  .sub {
+    background: #ef4444;
+    color: black;
+    box-shadow: 0 0 10px #ef4444;
+  }
+
+  .sub:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ef4444;
+  }
+
+  .reset {
+    margin-top: 40px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: #38bdf8;
+    color: black;
+    box-shadow: 0 0 15px #38bdf8;
+  }
+
+  .reset:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #0ea5e9;
+  }
+
+  @media (max-width: 500px) {
+    .placar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  .time {
+    transition: all 0.3s ease;
+  }
+
+  .time:hover {
+    transform: scale(1.05) rotateX(5deg);
+  }
+
+  .pontos.animar {
+    animation: pulse 0.3s ease;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+
+  .add:hover {
+    filter: brightness(1.2);
+  }
+
+  .sub:hover {
+    filter: brightness(1.2);
+  }
+
+  .reset:hover {
+    filter: brightness(1.2);
+  }
