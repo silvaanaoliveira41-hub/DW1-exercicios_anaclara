@@ -1,0 +1,32 @@
+DROP TABLE IF EXISTS MUSICA;
+DROP TABLE IF EXISTS ARTISTA;
+
+CREATE TABLE ARTISTA(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR NOT NULL, 
+    pais VARCHAR
+);
+
+CREATE TABLE MUSICA(
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(255),
+    duracao INTEGER,
+    artista_id INTEGER,
+    FOREIGN KEY (artista_id) REFERENCES ARTISTA(id)
+);
+
+-- Inserindo artistas (não se informa o id manualmente com SERIAL)
+INSERT INTO ARTISTA (nome, pais)
+VALUES 
+    ('Enzo Rabelo', 'Brasil'),
+    ('Shawn Mendes', 'EUA'),
+    ('Tarde da Noite', 'Brasil');
+
+-- Inserindo músicas (agora com artista_id válido)
+INSERT INTO MUSICA (titulo, duracao, artista_id)
+VALUES
+    ('Perfeitinha', 3, 1),
+    ('Meio caminho andado', 4, 1),
+    ('Itimalia', 4, 1);
+----------------------------------------------------------------------------------
+SELECT * FROM ARTISTA
