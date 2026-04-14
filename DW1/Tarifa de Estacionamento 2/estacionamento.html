@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Tarifa</title>
+  <link rel="stylesheet" href="estacionamento.CSS">
+</head>
+<body>
+
+<div class="container">
+  <h2>Calculadora de Tarifa</h2>
+
+  <label>
+    Data/Hora de entrada:
+    <input type="datetime-local" id="checkin">
+  </label>
+
+  <label>
+    Data/Hora de saída:
+    <input type="datetime-local" id="checkout">
+  </label>
+
+  <label class="checkbox">
+    <input type="checkbox" id="carroGrande">
+    Carro grande
+  </label>
+
+  <label class="checkbox">
+    <input type="checkbox" id="clienteFrequente">
+    Cliente frequente
+  </label>
+
+  <button onclick="calcularTarifa()">Calcular Tarifa</button>
+
+  <div id="resultado">O valor total é R$ 0,00</div>
+</div>
+
+<script src="estacionamento.js"></script>
+</body>
+</html>
