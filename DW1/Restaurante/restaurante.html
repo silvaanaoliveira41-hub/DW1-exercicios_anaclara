@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feine Küche - Cardápio</title>
+  <link rel="stylesheet" href="restaurante.CSS">
+</head>
+<body>
+
+<div class="container">
+  <h1>🍽️ Feine Küche</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Prato</th>
+        <th>Preço (R$)</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Schnitzel</td>
+        <td class="preco">35.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+      <tr>
+        <td>Bratwurst</td>
+        <td class="preco">30.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+      <tr>
+        <td>Risoto de Cogumelos</td>
+        <td class="preco">28.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+      <tr>
+        <td>Apfelstrudel</td>
+        <td class="preco">18.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+      <tr>
+        <td>Filé ao Molho de Vinho</td>
+        <td class="preco">45.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+      <tr>
+        <td>Frango ao Creme de Ervas</td>
+        <td class="preco">32.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+      <tr>
+        <td>Hambúrguer Gourmet</td>
+        <td class="preco">25.00</td>
+        <td><input type="number" min="0" value="0" oninput="validarNumero(this)" onkeydown="bloquearLetraE(event)"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Total: R$ <span id="total">0,00</span></h2>
+
+  <button onclick="calcularTotal()">Calcular Total</button>
+</div>
+
+<script src="restaurante.js"></script>
+</body>
+</html>
