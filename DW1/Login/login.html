@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Escola de Magia</title>
+<link rel="stylesheet" href="login.CSS">
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>✨ Escola de Magia ✨</h1>
+    <p>Descubra sua casa em Hogwarts</p>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2>Entrar</h2>
+
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="password" id="senha" placeholder="Senha">
+
+        <select id="casa">
+            <option value="">Escolha sua casa</option>
+            <option value="grifinoria">Grifinória</option>
+            <option value="sonserina">Sonserina</option>
+            <option value="corvinal">Corvinal</option>
+            <option value="lufalufa">Lufa-Lufa</option>
+        </select>
+
+        <button onclick="login()">Entrar</button>
+        <button onclick="chapelSeletor()">Chapéu Seletor</button>
+
+        <p id="erro">Login inválido</p>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

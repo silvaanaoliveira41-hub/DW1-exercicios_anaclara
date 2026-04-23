@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: url("https://images.unsplash.com/photo-1608889175157-7d6c2c3dcb63") no-repeat center/cover;
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: -1;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(0,0,0,0.85);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    border: 2px solid gold;
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#erro {
+    color: red;
+    display: none;
+}
+
+.brasao {
+    width: 120px;
+    margin: 10px 0;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
